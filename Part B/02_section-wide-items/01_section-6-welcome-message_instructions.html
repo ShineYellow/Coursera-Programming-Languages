@@ -1,0 +1,85 @@
+<meta charset="utf-8"/>
+<co-content>
+ <p>
+  The material in this module has two parts that fit together nicely:
+ </p>
+ <p hasmath="true">
+  First, we will study how we can build interesting data structures in Racket.  Because Racket is dynamically typed, we could just "use cons cells for everything," but doing so is error-prone and does not work well when you want abstraction and modularity.  On the other hand, a feature like ML's $$\verb|datatype|$$ bindings does not make much sense "as is" in a dynamically typed language.  So we will learn about Racket's
+  <em>
+   structs
+  </em>
+  and how to use them for building data structures.
+ </p>
+ <p>
+  Second, we will learn how we can write a program in one programming language that is an
+  <em>
+   implementation of another programming language
+  </em>
+  .  After some general material on the difference between
+  <em>
+   compilers
+  </em>
+  and
+  <em>
+   interpreters
+  </em>
+  and how to represent programs as syntax
+  <em>
+   trees
+  </em>
+  , we will focus in particular on implementing a language via an interpreter that is "just" a recursive function over a tree.  The core challenge in this module's homework assignment is to implement just such an interpreter in Racket for a small "made-up" programming language that has first-class function closures.  (We will describe how to implement closures and then you will translate the ideas into Racket in your interpreter.)
+ </p>
+ <p>
+  Compared to previous modules, this module has less [video] content but a more challenging and rewarding homework.  Enjoy!
+ </p>
+ <p>
+ </p>
+</co-content>
+<style>
+ body {
+    padding: 50px 85px 50px 85px;
+}
+
+table th, table td {
+    border: 1px solid #e0e0e0;
+    padding: 5px 20px;
+    text-align: left;
+}
+input {
+    margin: 10px;
+}
+}
+th {
+    font-weight: bold;
+}
+td, th {
+    display: table-cell;
+    vertical-align: inherit;
+}
+img {
+    height: auto;
+    max-width: 100%;
+}
+pre {
+    display: block;
+    margin: 20px;
+    background: #424242;
+    color: #fff;
+    font-size: 13px;
+    white-space: pre-wrap;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    border: 1px solid #ccc;
+}
+</style>
+<script async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+</script>
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$$','$$'], ['$','$'] ],
+      displayMath: [ ["\\[","\\]"] ],
+      processEscapes: true
+    }
+  });
+</script>
